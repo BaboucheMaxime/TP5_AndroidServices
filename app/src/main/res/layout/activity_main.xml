@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_below="@+id/logoLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Compteur"
+            android:layout_weight="1"
+            android:id="@+id/tv_one">
+        </TextView>
+
+        <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start service"
+            android:id="@+id/bt_one"
+            android:onClick="lancerCompteur">
+        </Button>
+        <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Afficher compteur"
+            android:onClick="afficherCompteur"
+            android:id="@+id/bt_two">
+        </Button>
+        <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Stop service"
+            android:onClick="stopCompteur"
+            android:id="@+id/bt_three">
+        </Button>
+
+</LinearLayout>
